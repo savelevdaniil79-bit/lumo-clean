@@ -1,0 +1,13 @@
+{
+  "name": "lumo-content",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lumo: единый контент курсов (ru/en/uz), сборка и валидация",
+  "scripts": {
+    "build:content": "node scripts/build.js",
+    "validate:content": "node scripts/validate.js",
+    "validate:partial": "node scripts/validate.js --partial",
+    "verify:code": "node scripts/verify-code.js",
+    "check": "npm run build:content && npm run validate:partial && npm run verify:code"
+  }
+}
